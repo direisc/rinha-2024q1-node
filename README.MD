@@ -1,14 +1,32 @@
-# Submissão para Rinha de Backend, Segunda Edição: 2024/Q1 - Controle de Concorrência
+# Rinha de Backend, Segunda Edição: 2024/Q1 - Controle de Concorrência
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Nginx_logo.svg" alt="logo nginx" width="300" height="auto"><br />
-<img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="logo nodejs" width="300" height="auto"><br />
-<img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" alt="logo postgres" width="200" height="auto">
+PoC para a segunda edição da Rinha de Backend feita em node com as libs `find-my-way`, `drizzle-orm`, `http-body`, `pg` e `zod`.
 
-## Diego Reis Carvalho
-Submissão feita com:
-- `nginx` como load balancer
-- `postgres` como banco de dados
-- `node` para api com as libs `find-my-way`, `drizzle-orm`, `http-body`, `pg` e `zod`
-- [repositório da api](https://github.com/direisc/rinha-2024q1-node)
+## Requirements / Pré Requisitos
 
-[@direisc](https://github.com/direisc) @ github
+- node 18
+- docker
+- docker compose
+
+## Run / Para executar
+
+```bash
+# start database
+docker compose up -d
+# install dependencies
+pnpm i
+# run the server
+pnpm start
+```
+
+## Containerization / Conteinerização
+
+O diretório containerization possui diversos exemplos para conteinerização da API. Talvez você precise fazer ajustes para que funcionem.
+
+## Submission / Submissão
+
+O diretório participacao contem os artefatos usados para a submissão da Rinha de Backend.
+
+## License
+
+MIT - Copyright © 2024 - Poc Rinha de Backend Segunda Edição em nodejs
