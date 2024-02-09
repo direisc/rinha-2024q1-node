@@ -21,11 +21,11 @@ pnpm start
 
 ## Containerization / Conteinerização
 
-O diretório containerization possui diversos exemplos para conteinerização da API. Talvez você precise fazer ajustes para que funcionem.
+O diretório [containerization](./containerization/) possui diversos exemplos para conteinerização da API. Talvez você precise fazer ajustes para que funcionem.
 
 ## Submission / Submissão
 
-O diretório participacao contem os artefatos usados para a submissão da Rinha de Backend.
+O diretório [participacao](./participacao) contem os artefatos usados para a submissão da Rinha de Backend.
 
 ## License
 
