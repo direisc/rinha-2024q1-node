@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3000
 
 server.listen(PORT, (err) => {
   if (err) throw err
-  console.log('Server listening on: http://localhost:3000')
+  console.log(`Server listening on: http://localhost:${PORT}`)
 })
 
 /**

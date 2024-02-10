@@ -5,7 +5,8 @@
   "main": "src/index.mjs",
   "type": "module",
   "scripts": {
-    "start": "node --watch src/index.mjs",
+    "start": "node src/index.mjs",
+    "dev": "node --watch src/index.mjs",
     "lint": "npx prettier . --write",
     "studio": "drizzle-kit studio",
     "migration:generate": "drizzle-kit generate:pg",

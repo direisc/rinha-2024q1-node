@@ -1,0 +1,31 @@
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    hostname: db
+    user: postgres
+    environment:
+      - POSTGRES_DB=rinha_2024q1
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - '5432:5432'
+    volumes:
+      - ../init.sql:/docker-entrypoint-initdb.d/init.sql
+    command: postgres -c checkpoint_timeout=600 -c max_wal_size=4096
+    healthcheck:
+      test: ['CMD', 'pg_isready']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    # TODO resources usado para testes
+    # deploy:
+    #   resources:
+    #     limits:
+    #       cpus: '0.45'
+    #       memory: '140MB'
+
+networks:
+  default:
+    driver: bridge
+    name: rinha-nginx-2024q1
